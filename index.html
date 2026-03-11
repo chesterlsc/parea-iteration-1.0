@@ -22,6 +22,15 @@
       <div class="container header-shell">
         <a class="brand" href="#top" aria-label="Parea Collective home">Parea Collective</a>
 
+        <nav class="site-nav desktop-nav" aria-label="Primary">
+          <a href="#studio">Studio</a>
+          <a href="#companies">Companies</a>
+          <a href="#team">Team</a>
+          <a href="#about">About</a>
+        </nav>
+
+        <a class="button button-dark desktop-cta" href="#connect">Connect</a>
+
         <button
           class="menu-toggle"
           type="button"
@@ -33,16 +42,16 @@
           <span></span>
           <span class="sr-only">Toggle navigation</span>
         </button>
+      </div>
 
-        <div class="nav-shell" id="site-navigation" data-nav>
-          <nav class="site-nav" aria-label="Primary">
-            <a href="#studio">Studio</a>
-            <a href="#companies">Companies</a>
-            <a href="#team">Team</a>
-            <a href="#about">About</a>
-          </nav>
-          <a class="button button-primary header-cta" href="#connect">Connect</a>
-        </div>
+      <div class="container mobile-nav-shell" id="site-navigation" data-nav>
+        <nav class="site-nav mobile-nav" aria-label="Mobile primary">
+          <a href="#studio">Studio</a>
+          <a href="#companies">Companies</a>
+          <a href="#team">Team</a>
+          <a href="#about">About</a>
+        </nav>
+        <a class="button button-dark mobile-cta" href="#connect">Connect</a>
       </div>
     </header>
 
@@ -58,33 +67,51 @@
             </h1>
           </div>
 
-          <div class="hero-side reveal">
+          <aside class="hero-side reveal">
             <p class="hero-copy">
               Parea Collective builds infrastructure, automation, and growth systems for
               businesses built for the long term.
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#studio">Explore Parea</a>
+              <a class="button button-accent" href="#about">Explore Parea</a>
               <a class="button button-secondary" href="#connect">Connect</a>
             </div>
-          </div>
+          </aside>
         </div>
 
-        <div class="container">
-          <section class="overview-strip reveal" aria-label="Parea overview">
-            <article class="overview-item" id="studio">
-              <span class="overview-label">Studio</span>
-              <p>Shared systems that create clarity before scale.</p>
-            </article>
-            <article class="overview-item" id="companies">
-              <span class="overview-label">Companies</span>
-              <p>Independent businesses supported by stronger foundations.</p>
-            </article>
-            <article class="overview-item" id="team">
-              <span class="overview-label">Team</span>
-              <p>Operators, builders, and strategists focused on durable growth.</p>
-            </article>
-          </section>
+        <div class="container spotlight-grid">
+          <article class="spotlight-card reveal" id="studio">
+            <div class="spotlight-copy">
+              <span class="spotlight-label">Studio</span>
+              <h2>Systems before speed</h2>
+              <p>
+                We design the operational layer that gives companies structure, visibility, and
+                leverage before growth accelerates.
+              </p>
+            </div>
+            <div class="spotlight-graphic graphic-frames" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </article>
+
+          <article class="spotlight-card reveal" id="companies">
+            <div class="spotlight-copy">
+              <span class="spotlight-label">Companies</span>
+              <h2>Built to support an ecosystem</h2>
+              <p>
+                Independent businesses benefit from shared infrastructure, automation, and
+                strategic guidance without losing focus.
+              </p>
+            </div>
+            <div class="spotlight-graphic graphic-cluster" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -94,11 +121,17 @@
             <p class="eyebrow">Who we are</p>
             <h2>Who we are</h2>
           </div>
-          <div class="section-copy reveal">
-            <p>
+
+          <div class="who-content reveal">
+            <p class="section-copy">
               Parea Collective is a modern business ecosystem focused on building strong
               foundations for scalable companies.
             </p>
+            <div class="who-tags" id="team" aria-label="Core principles">
+              <span>Operational clarity</span>
+              <span>Automation systems</span>
+              <span>Strategic growth</span>
+            </div>
           </div>
         </div>
       </section>
@@ -112,14 +145,17 @@
 
           <div class="card-grid">
             <article class="service-card reveal">
+              <span class="service-index">01</span>
               <h3>Infrastructure</h3>
               <p>Build the systems and digital foundations behind scalable businesses.</p>
             </article>
             <article class="service-card reveal">
+              <span class="service-index">02</span>
               <h3>Automation</h3>
               <p>Implement clear workflows and operational efficiency through automation.</p>
             </article>
             <article class="service-card reveal">
+              <span class="service-index">03</span>
               <h3>Growth</h3>
               <p>Support long-term expansion through strategy, branding, and marketing.</p>
             </article>
@@ -130,11 +166,13 @@
       <section class="section closing" id="connect">
         <div class="container">
           <div class="closing-panel reveal">
-            <p class="eyebrow">Built for the long game</p>
-            <h2>Built for the long game</h2>
+            <div>
+              <p class="eyebrow">Built for the long game</p>
+              <h2>Built for the long game</h2>
+            </div>
             <p class="closing-copy">We create the systems behind sustainable growth.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="mailto:hello@pareacollective.com"
+              <a class="button button-dark" href="mailto:hello@pareacollective.com"
                 >Partner with us</a
               >
               <a class="button button-secondary" href="mailto:hello@pareacollective.com"

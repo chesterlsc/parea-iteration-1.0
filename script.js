@@ -2,7 +2,7 @@
 
 const header = document.querySelector(".site-header");
 const menuToggle = document.querySelector("[data-menu-toggle]");
-const navLinks = document.querySelectorAll(".site-nav a, .header-cta");
+const navLinks = document.querySelectorAll(".mobile-nav a, .mobile-cta");
 const revealItems = document.querySelectorAll(".reveal");
 
 if (menuToggle && header) {
