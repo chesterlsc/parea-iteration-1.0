@@ -586,15 +586,21 @@ dd {
 }
 
 .companies-head {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-columns: 1fr;
   gap: 1.7rem;
   align-items: end;
+  justify-items: center;
   margin-bottom: 2.45rem;
+  text-align: center;
 }
 
 .companies-intro {
   max-width: 720px;
+  display: grid;
+  justify-items: center;
+  margin: 0 auto;
 }
 
 .companies-intro p:last-child {
@@ -602,11 +608,16 @@ dd {
   max-width: 39ch;
   font-size: 1.08rem;
   line-height: 1.62;
+  margin-inline: auto;
 }
 
 .carousel-controls {
   display: flex;
   gap: 0.75rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .carousel-button {
@@ -883,6 +894,8 @@ dd {
   }
 
   .carousel-controls {
+    position: static;
+    transform: none;
     justify-content: flex-start;
   }
 
@@ -1203,6 +1216,7 @@ dd {
     transform: none;
   }
 }
+
 
 
 
